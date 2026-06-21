@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+# Task Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A task management application built with React and Redux Toolkit that helps users organize, track, and manage tasks efficiently. The application allows users to create tasks, update their status, and filter them based on progress, providing a streamlined workflow management experience.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Task Management App is a productivity-focused web application designed to help users organize daily tasks and monitor progress. Users can categorize tasks into different stages of completion and quickly filter tasks through a dropdown menu.
 
-### `npm start`
+The application leverages Redux Toolkit for centralized state management, ensuring predictable state updates and efficient data handling across the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project demonstrates modern React development practices, state management patterns, reusable component architecture, and responsive user interface design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+* Create new tasks
+* Update task status
+* Delete tasks
+* Track task progress
+* Filter tasks by status
+* View all tasks in a single dashboard
+* Responsive design for desktop and mobile devices
+* Centralized state management with Redux Toolkit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Task Status Categories
 
-### `npm run build`
+Tasks can be organized into the following categories:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* All Tasks
+* To Do
+* In Progress
+* Completed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Users can quickly switch between categories using a dropdown filter to focus on relevant tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* React 19
+* JavaScript (ES6+)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### State Management
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Redux Toolkit
+* React Redux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Styling
 
-## Learn More
+* Tailwind CSS
+* PostCSS
+* Autoprefixer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Utilities
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* UUID
 
-### Code Splitting
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Add screenshots of the application here.
 
-### Analyzing the Bundle Size
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clone the repository:
 
-### Making a Progressive Web App
+```bash id="70ewrq"
+git clone https://github.com/Maryam-Rastin/task-management-redux.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Navigate to the project directory:
 
-### Advanced Configuration
+```bash id="k4jy6k"
+cd task-management-redux
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Install dependencies:
 
-### Deployment
+```bash id="97g81o"
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Start the development server:
 
-### `npm run build` fails to minify
+```bash id="1yxw7v"
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application will run locally at:
+
+```text id="of9f81"
+http://localhost:3000
+```
+
+## Build for Production
+
+```bash id="s3sgl5"
+npm run build
+```
+
+## Project Structure
+
+```text id="i8xj5p"
+src/
+├── app/
+├── features/
+├── components/
+├── store/
+├── utils/
+├── App.js
+└── index.js
+```
+
+## Technical Highlights
+
+### Redux Toolkit State Management
+
+Implemented centralized state management using Redux Toolkit to manage:
+
+* Task creation
+* Task updates
+* Task deletion
+* Task filtering
+* Status management
+
+### Dynamic Filtering
+
+Built a dropdown-based filtering system that dynamically updates the displayed task list based on user-selected categories.
+
+### Unique Task Management
+
+Utilized UUID to generate unique identifiers for each task, ensuring reliable task tracking and updates.
+
+### Component-Based Architecture
+
+Created reusable React components to improve maintainability, scalability, and code organization.
+
+## Challenges & Solutions
+
+### Challenge: Managing Shared State Across Components
+
+Task information needed to remain synchronized across multiple UI components.
+
+### Solution
+
+Implemented Redux Toolkit to centralize application state, ensuring consistent updates and reducing unnecessary prop drilling.
+
+### Challenge: Dynamic Task Filtering
+
+Users need a quick way to focus on specific task categories without navigating away from the page.
+
+### Solution
+
+Developed a filtering system that instantly updates displayed tasks based on the selected status, improving usability and productivity.
+
+## Learning Outcomes
+
+This project strengthened my understanding of:
+
+* Redux Toolkit fundamentals
+* React state management patterns
+* CRUD application development
+* Component-driven architecture
+* Dynamic filtering logic
+* Tailwind CSS styling
+* Frontend application structure
+
+## Future Improvements
+
+* Drag-and-drop task management
+* Due dates and reminders
+* Task priority levels
+* User authentication
+* Persistent data storage
+* Dark mode support
+* Search functionality
+* Team collaboration features
+
+## What I Learned
+
+Through this project, I gained practical experience building a state-driven React application using Redux Toolkit. I learned how to manage complex application state, implement dynamic filtering systems, structure scalable React projects, and create responsive user interfaces that improve productivity.
+
+## Author
+
+**Maryam Rastin**
+
+GitHub: https://github.com/Maryam-Rastin
+
+## License
+
+This project is available under the MIT License.
