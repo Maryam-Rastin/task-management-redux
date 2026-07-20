@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/task-management-redux/static/css/main.8da9d180.css",
+    "main.js": "/task-management-redux/static/js/main.4cfd2ded.js",
+    "index.html": "/task-management-redux/index.html",
+    "main.8da9d180.css.map": "/task-management-redux/static/css/main.8da9d180.css.map",
+    "main.4cfd2ded.js.map": "/task-management-redux/static/js/main.4cfd2ded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8da9d180.css",
+    "static/js/main.4cfd2ded.js"
+  ]
+}
