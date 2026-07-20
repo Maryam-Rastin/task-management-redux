@@ -2,6 +2,8 @@
 
 A task management application built with React and Redux Toolkit that helps users organize, track, and manage tasks efficiently. The application allows users to create tasks, update their status, and filter them based on progress, providing a streamlined workflow management experience.
 
+Live demo: https://maryam-rastin.github.io/task-management-redux/
+
 ## Overview
 
 Task Management App is a productivity-focused web application designed to help users organize daily tasks and monitor progress. Users can categorize tasks into different stages of completion and quickly filter tasks through a dropdown menu.
